@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZenFocus | Minimalist Productivity</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-overlay"></div>
+    
+    <main class="zen-container">
+        <header class="zen-header">
+            <h1 id="time">00:00</h1>
+            <h2 id="greeting">Good morning, Guest</h2>
+        </header>
+
+        <section class="zen-content">
+            <div class="focus-box">
+                <h3>What is your main focus for today?</h3>
+                <div class="input-group">
+                    <input type="text" id="focus-input" placeholder="Enter your goal..." autocomplete="off">
+                    <button id="add-btn">+</button>
+                </div>
+                <ul id="task-list">
+                    <!-- Tasks will be injected here -->
+                </ul>
+            </div>
+        </section>
+
+        <footer class="zen-footer">
+            <p id="quote">"Simplicity is the ultimate sophistication."</p>
+        </footer>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
